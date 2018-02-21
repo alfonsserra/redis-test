@@ -53,8 +53,11 @@ To run the client, run the following bash command:
 docker exec -it my-redis redis-cli
 ```
 
-For the moment the repository only contains a test class.
+For the moment the repository only contains a test classes. Type the following command to run the tests:
 
+```bash
+mvn test
+```
 
 [git]: https://git-scm.com/
 [maven]: https://maven.apache.org/download.cgi
