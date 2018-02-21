@@ -2,7 +2,7 @@
 # `redis-test` — Test Redis using Jedis API
 
 This project is a test for [Redis][redis], an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker.
-[JRedis API][jredis] is used as a client.
+[Jedis API][jedis] is used as a client.
 
 ## Getting Started
 
@@ -60,4 +60,4 @@ For the moment the repository only contains a test class.
 [maven]: https://maven.apache.org/download.cgi
 [jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 [redis]: https://redis.io/
-[jredis]: https://github.com/alphazero/jredis
+[jedis]: https://github.com/xetorthio/jedis

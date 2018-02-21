@@ -36,6 +36,20 @@ class RedisTests {
     }
 
     @Test
+    public void testNumbers() {
+        Long seq=jedis.incr("sequence");
+        assertEquals(1l,seq.longValue());
+
+        seq=jedis.incr("sequence");
+        assertEquals(2l,seq.longValue());
+
+        jedis.del("sequence");
+
+        seq=jedis.incr("sequence");
+        assertEquals(1l,seq.longValue());
+    }
+
+    @Test
     public void testLists() {
         jedis.del("tasks");
         jedis.lpush("tasks", "first");
